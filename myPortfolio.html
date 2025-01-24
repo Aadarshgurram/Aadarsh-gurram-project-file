@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>my portfolio</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            header{
+                text-align: center;
+                padding: 40px;
+                background-color: rgba(44, 90, 174, 0.703);        
+                }
+            header h1{
+                font-size: 50px;
+                margin-bottom: 40px;
+            }
+            header nav a button{
+                background-color: rgba( rgb(227, 131, 35));
+                color: rgb(18, 17, 17);
+                cursor: pointer;
+                border: none;
+                padding: 15px 30px;
+                margin: 7px;
+                border-radius: 30%;
+                transition-duration: 0.3s;
+            }
+            header nav a button:hover{
+                background-color: rgb(224, 86, 22);
+            }
+            body{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-color: rgba(213, 219, 230, 0.703);
+                line-height: 20px;
+                color: rgba(rgba(97, 201, 180, 0.482), green, blue, alpha);
+            }
+            main{
+                padding: 20px;
+            }
+            section{
+                margin-bottom: 40px;
+                padding: 20px;
+                border: 2px solid #a42828;
+                border-radius:10px;
+
+            }
+            #about img{
+                width: 125px;
+                height: 125px;
+                border-radius: 50%;
+                margin-bottom: 10px;
+            }
+            
+            table{
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            table,th,td{
+                border: 1px solid black;
+                padding:10px;
+                text-align: center;
+            }
+            form input, form button {
+                margin: 10px 0;
+                padding: 10px;
+                width: 80%;
+                max-width: 350px;
+                display: block;
+            }
+            footer{
+                background-color: rgb(178, 204, 126);
+                color: whitesmoke;
+                padding: 50px;
+                text-align: center;
+            }
+        </style>
+    </head>
+        <body>
+
+            <header>
+            <h1>welcome to my portfolio</h1>
+
+                <nav>
+            <a href="#about"><button>About</button></a>
+            <a href="#skills"><button>skills</button></a>
+            <a href="#projects"><button>projects</button></a>
+            <a href="#contact"><button>contact</button></a><br><br></nav>
+            </header>
+
+            <main>
+            <section id="about">
+                    <img src="Aadarsh.jpg" width="30%" height="50%" id="image">
+                
+                <p id="A1"> I am a passionate frontend developer</p>
+                <p id="B1">I am studying graduation in <em> Sri venkateswara college of engineering and technology</em> (SVCET) <strong>chittoor</strong></p>
+            </section>
+
+            <section id="skills">
+                <h3>
+                    Skills
+                </h3>
+    
+                <ol id="list">
+                    <li>java basics</li>
+                    <li>python basics</li>
+                    <li>frontend developer</li>
+                    <li>c basics</li>
+                </ol>
+            </section>
+
+            <section id="projects">
+                <b id="project1"> projects</b>
+                <table>
+                   <tr>
+                    <th>projects</th>
+                    <th>Description</th>
+                   </tr>
+                   <tr>
+                    <td>income tax calculating system</td>
+                    <td>to calculate the income tax in our own</td>
+
+                   </tr>
+                </table>
+                
+            </section>
+
+            <section id="contact">
+                
+                <h1>Contact Me</h1><br>
+                <h4>feel free to contact me i will help you</h4><br>
+    
+                <h2>Enter your details</h2><br>
+                
+                
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                    <br>
+    
+                    <label for="email">email:</label>
+                    <input type="text" id="email"placeholder="Enter your email" required>
+                    <br>
+                    
+                    <b>select your gender:</b><br>
+                    <label for="male">male</label>
+                    <input type="radio" name="gender" value="male"><br>
+                    <label for="female">female</label>
+                    <input type="radio" name="gender" value="female">
+                    <br>
+    
+                    
+                    
+                    <label for="mobile">phone number:</label>
+                    <input type="tel" id="telephone" placeholder="Enter your number" required>
+                    <br>
+    
+    
+                    <b>Select your interested in: </b><br>
+                    <label for="coding">coding</label>
+                    <input type="checkbox" id="coding" value="coding">
+    
+                    <label for="testing">testing</label>
+                    <input type="checkbox" id="testing" value="testing">
+                    <br>
+    
+                    <button>submit</button>
+                </form>
+            
+                <p>Thank you for contact us.</p>
+
+            </section>
+        </span>
+        </main>
+
+            <footer>
+
+                <p>@ my portfolio</p>
+
+            </footer>
+
+        </body>
+</html>
